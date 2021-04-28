@@ -1,11 +1,12 @@
 from django.db import models
 import datetime
 # Create your models here.
+from django.utils import timezone
 
 
 class Cakes(models.Model):
     cakeid = models.AutoField(primary_key=True)
-    createdat = models.DateTimeField(default=datetime.datetime.now())
+    createdat = models.DateTimeField(default=timezone.now)
     name = models.CharField(max_length=250)
     description = models.CharField(max_length=550)
     type = models.CharField(max_length=550)
