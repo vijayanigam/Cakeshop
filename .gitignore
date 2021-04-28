@@ -131,7 +131,7 @@ pythonenv*
 # Spyder project settings
 .spyderproject
 .spyproject
-
+.env
 # Rope project settings
 .ropeproject
 
